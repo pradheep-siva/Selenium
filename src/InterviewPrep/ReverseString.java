@@ -11,17 +11,7 @@ public class ReverseString {
 
 		
 		
-		String given = "Pradeep";
-		char[] charArray = given.toCharArray();
-		List<Character> l=new ArrayList<Character>();
-		for(Character  c :charArray) {
-			l.add(c);
-		}
-		Collections.reverse(l);
-		ListIterator itr = l.listIterator();
-		while(itr.hasNext()) {
-			System.out.println(itr.next());
-		}
+		
 		
 	}
 
@@ -43,6 +33,20 @@ public class ReverseString {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(givenWord);
 		System.out.println(buffer.reverse());
+	}
+	
+	public void usingCollection() {
+		String given = "Pradeep";
+		char[] charArray = given.toCharArray();
+		List<Character> l=new ArrayList<Character>();
+		for(Character  c :charArray) {
+			l.add(c);
+		}
+		Collections.reverse(l);
+		ListIterator itr = l.listIterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
 	}
 
 }
